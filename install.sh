@@ -16,8 +16,8 @@ if [ -d "$vardir" ]; then
   # Verificar si existe el directorio smali/com/metasploit en el directorio origen
   if [ -d "$vardir/smali/com/metasploit" ]; then
     # Crear el directorio smali/com en el directorio destino si no existe
-    if [ ! -d "$vardirfinal/smali/con" ]; then
-      mkdir -p "$vardirfinal/smali/con"
+    if [ ! -d "$vardirfinal/smali/com" ]; then
+      mkdir -p "$vardirfinal/smali/com"
     fi
     # Copiar el contenido del directorio smali/com/metasploit al directorio smali/con en el directorio destino
     cp -r "$vardir/smali/com/metasploit" "$vardirfinal/smali/com"
